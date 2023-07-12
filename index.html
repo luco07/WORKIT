@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workit</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body class="hidden">
+    <div class="preloader" id = "div">
+        <h1>WORK IT!</h1>
+        <img  class="avion" src="./img/png-transparent-cartoon-paper-airplane-paper-airplane-route-paper-thumbnail.png" alt="">
+        <button id="unirse">Unirse a la beta</button>
+    </div>
+    <header class="header">
+        <a href="#"><img class="logo" src="./img/1.png" alt="Workit logo"></a>
+        
+    </header>
+    <main class="main">
+       
+        <section class="section beta">
+            <form name="my-google-sheet" action="https://script.google.com/macros/s/AKfycbzMm_-zfWQmiGhc4T0pyiVzKC94B2AihHNuWSv9KqMlpKRuTp6lLxR-PVm0_iwGOYoYEA/exec" method="POST" autocomplete="off"" class="form" id="my-google-sheet">
+                <label for="Correo">
+                    <p>UNETE A LA BETA</p>
+                   
+                    <input name="Correo" required type="email" placeholder="example@gmail.com">
+                </label>
+                <button id="submit" onclick="SendFormGoogleSheets()" type="submit" >Unirse</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="redes" >
+            <li class="red-social"><a href=""><box-icon name= 'twitter' type='logo' ></box-icon></a></li>
+            <li class="red-social"><a href=""><box-icon type='logo' name='instagram'></box-icon></a></li>
+            <li class="red-social"><a href=""><box-icon type='logo' name='tiktok'></box-icon></a></li>
+        </ul>
+    </footer>
+    <script src="./js/app.js"></script>
+
+
+</body>
+</html>

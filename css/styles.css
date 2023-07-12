@@ -1,0 +1,123 @@
+/*AJUSTES GENERALES*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+ul li{
+    list-style: none;
+}
+li{
+    display: flex;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    color: #0CC0DF;
+    font-size: 40px;
+    margin-top: 40vh;
+    display: block;
+    text-align: center;
+}
+button{
+    font-size: 24px;
+    padding: 5px;
+    color: #0CC0DF;
+    border: none;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin-left: 35%;
+    margin-top: 10px;
+}
+input{
+    width: 90%;
+    margin-left: 5%;
+    padding: 7px 0px;
+    border-radius: 6px;
+    border: none;
+}
+/*H E A D E R*/
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    width: 50px;
+    height: auto;
+}
+/*M A I N*/
+.section{
+    height: 87vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.beta{
+    justify-content: center;
+    background-color: #0CC0DF;
+}
+.form{
+    margin-top: 45vh;
+}
+.form p{
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+    margin-top: 10px;
+    font-size: 40px;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: #0f1042;
+}
+.avion{
+    width: 170px;
+    height: 170px;
+}
+/*P R E L O A D E R*/
+.preloader{
+    height: 100vh;
+    display: block;
+}
+.hidden{
+    overflow: hidden;
+}
+#unirse{
+    color: #FFFFFF;
+    border: none;
+    background-color: #0CC0DF;
+}
+/*F O O T E R*/
+.footer{
+    background-color: #0CC0DF;
+    display: flex;
+    justify-content: center;
+}
+.redes{
+    display: flex;
+    justify-content: space-around;
+}
+.red-social{
+    margin-inline: 20px;
+    margin-bottom: 20px;
+}
+@media screen and (min-width: 490px) {
+    .avion{
+        width: 230px;
+        height: 230px;
+    }
+    .form p{
+        font-size: 60px;
+    }
+    #submit{
+        width: 90%;
+        margin-left: 5%
+
+    }
+    #submit:hover{
+        background-color: #0f1042;
+        color: #FFFFFF;
+        border: #0f1042 solid 3px;
+    }
+}
