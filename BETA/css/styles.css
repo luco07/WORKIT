@@ -5,6 +5,7 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
+    overflow: scroll;
 }
 ul li{
     list-style: none;
@@ -25,11 +26,16 @@ button{
     font-size: 24px;
     padding: 5px;
     color: #0CC0DF;
-    border: none;
     background-color: #FFFFFF;
+    border: 1px solid #0CC0DF;
     border-radius: 5px;
     margin-left: 35%;
     margin-top: 10px;
+    cursor: pointer;
+}
+button:hover{
+    color: #0CC0DF;
+    background-color: #0cbfdf71;
 }
 input{
     width: 90%;
@@ -50,17 +56,17 @@ input{
 }
 /*M A I N*/
 .section{
-    height: 87vh;
+    height: 80vh;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 .beta{
     justify-content: center;
-    background-color: #0CC0DF;
+    background-color: #FFFFFF;
 }
 .form{
-    margin-top: 45vh;
+    margin-top: 30vh;
 }
 .form p{
     width: 100%;
@@ -69,7 +75,16 @@ input{
     margin-top: 10px;
     font-size: 40px;
     font-family: Verdana, Tahoma, sans-serif;
-    color: #0f1042;
+    color: #0CC0DF;
+}
+.form input{
+    border: #0CC0DF solid 1px;
+}
+.form input::placeholder {
+    color: #0CC0DF; 
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
 }
 .avion{
     width: 170px;
@@ -83,14 +98,9 @@ input{
 .hidden{
     overflow: hidden;
 }
-#unirse{
-    color: #FFFFFF;
-    border: none;
-    background-color: #0CC0DF;
-}
 /*F O O T E R*/
 .footer{
-    background-color: #0CC0DF;
+    background-color: #FFFFFF;
     display: flex;
     justify-content: center;
 }
@@ -101,6 +111,15 @@ input{
 .red-social{
     margin-inline: 20px;
     margin-bottom: 20px;
+}
+#alert{
+    color: #0f1042;
+    background-color: #FFFFFF;
+    text-align: center;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    display: none;
 }
 @media screen and (min-width: 490px) {
     .avion{
